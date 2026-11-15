@@ -1,0 +1,177 @@
+PIXMO GAMES 1.6.4 - Tu biblioteca de juegos para Wii U (Aroma)
+=============================================================
+(English: README.txt)
+
+Pixmo Games es un menú para tus juegos instalados. Abre en la vista "Cine": el
+arte del juego llena la pantalla, la caja se ve grande y en 3D, y al lado va la
+ficha del juego. Tiene categorías con iconos o logos, favoritos, recientes,
+búsqueda, música ambiental y tres vistas. La interfaz está en español y en
+inglés (sigue el idioma de la consola; se cambia en Ajustes > Idioma).
+
+
+REQUISITOS
+----------
+- Una Wii U con Aroma (https://aroma.foryour.cafe), mejor si está actualizado
+  (Aroma Updater).
+- Los juegos instalados en la memoria del sistema o en un disco USB.
+
+
+INSTALAR
+--------
+1. Copia la carpeta "wiiu" de este zip a la raíz de la tarjeta SD
+   (queda SD:/wiiu/apps/pixmogames/pixmogames.wuhb).
+2. Enciende la consola con Aroma. "Pixmo Games" aparece en el menú Wii U.
+
+Opcional - abrir Pixmo Games al encender: copia también la carpeta "wiiu" de
+"autostart_plugin_optional" a la raíz de la SD (ver más abajo).
+
+Pixmo Games muestra todos los juegos instalados: de Wii U, demos, Consola
+Virtual y también los juegos de Wii y GameCube instalados para Wii U (los de la
+eShop y los inyectados). Las actualizaciones y los DLC no salen como juegos
+aparte: se muestran en la ficha del juego.
+
+Juegos de Wii y GameCube: al jugarlos, Pixmo Games pregunta lo mismo que el
+menú de Wii U, cómo quieres jugar: con el Wii U GamePad (si el juego lo
+admite), con Wiimote en la TV o con Wiimote en la pantalla del GamePad. Luego
+la consola pasa al modo Wii. La próxima vez ofrece primero la última opción.
+
+Juegos de GameCube inyectados (UWUVCI): usan Nintendont, que tiene que estar en
+la SD: SD:/apps/nintendont/boot.dol y su configuración SD:/nincfg.bin (se crea
+al abrir Nintendont una vez desde el Homebrew Channel y guardar los ajustes).
+Sin ellos aparece "boot.dol not found" o "nincfg.bin not found". No depende de
+Pixmo Games: desde el menú Wii U pasa lo mismo.
+
+Homebrew de Aroma: los paquetes .wuhb de la SD (en SD:/wiiu/apps/ o en una
+carpeta dentro de ella) salen como juegos más y se abren desde Pixmo Games como
+desde el menú Wii U. Las herramientas (actualizadores, instaladores, tiendas de
+homebrew) quedan ocultas: se pueden mostrar en Ajustes > Juegos ocultos.
+
+
+ABRIR AL ENCENDER Y VOLVER AL CERRAR UN JUEGO (opcional)
+-------------------------------------------------------
+Aroma no trae esa opción: la agrega el plugin "Pixmo Games Autostart", el
+archivo pixmo_inicio.wps, que va en SD:/wiiu/environments/aroma/plugins/.
+- Al encender la consola, apenas aparece el menú Wii U se abre Pixmo Games.
+- Si cierras con HOME > Cerrar software un juego que iniciaste desde Pixmo
+  Games, la consola pasa un momento por el menú Wii U y vuelve a Pixmo Games.
+  Con los juegos de Wii y GameCube pasa lo mismo al salir del modo Wii.
+- Para quedarte en el menú Wii U: mantén apretado B en el GamePad mientras
+  aparece el menú. Y si sales de Pixmo Games con + > Salir al menú Wii U, te
+  quedas en el menú.
+- Cada cosa se activa o desactiva en Ajustes: "Abrir Pixmo Games al encender"
+  y "Volver aquí al cerrar un juego".
+- En el menú de arranque de Aroma (mantén + al encender) el inicio automático
+  debe ser "Wii U Menu", que es lo normal.
+- El plugin funciona cuando Aroma está cargado. Si al encender ves el menú Wii U
+  normal y cargas Aroma abriendo "Información sobre salud y seguridad", Pixmo
+  Games se abre justo después de cargar Aroma. Al salir de un juego de Wii la
+  consola se reinicia: vuelve a abrir Aroma y Pixmo Games se abre solo.
+- Para quitarlo, borra pixmo_inicio.wps de la SD.
+- Si algo no funciona, el plugin anota lo que hizo en
+  SD:/wiiu/apps/pixmogames/inicio_log.txt.
+
+
+CONTROLES (GamePad, Pro Controller, Wiimote o la pantalla táctil)
+-----------------------------------------------------------------
+  A          Jugar
+  X          Opciones del juego: categorías, favorito, ocultar, información
+  Y          Marcar / quitar de Favoritos
+  Izq / Der  Juego anterior / siguiente
+  L / R      Categoría anterior / siguiente
+  ZL / ZR    Saltar a la letra anterior / siguiente
+  Arriba     Ir a la barra de categorías
+  -          Buscar (teclado de la consola)
+  +          Ajustes
+  B          Atrás / quitar la búsqueda / salir al menú Wii U
+  Táctil     Toca una carátula del carrusel para elegirla y otra vez (o la
+             caja grande) para jugar; desliza para cambiar de juego; toca las
+             pestañas y los botones.
+
+
+VISTAS (+ > Vista)
+------------------
+  Cine        (la de inicio) fondo del juego a pantalla completa, caja 3D,
+              ficha y carrusel de carátulas abajo.
+  Vitrina     carátula + ficha con fondo claro estilo Wii U y carrusel de iconos.
+  Cuadrícula  todos los iconos en una cuadrícula y la ficha a la derecha.
+
+
+CATEGORÍAS
+----------
+- Vienen Disparos, Aventura, Carreras, Peleas y Arcade, vacías: se pueden
+  llenar, borrar o renombrar.
+- Añadir juegos: X sobre el juego > Categorías > marca las que quieras.
+  Un juego puede estar en varias categorías.
+- Crear: + > Gestionar categorías > Nueva categoría (o X sobre un juego >
+  Categorías > Nueva categoría...).
+- Cada categoría tiene icono (28 a elegir), color y, si quieres, un logo
+  propio: copia imágenes PNG o JPG a SD:/wiiu/apps/pixmogames/logos/ y
+  elígelas en la categoría > Logo personalizado.
+- En Gestionar categorías: A editar, Y nueva, X borrar, L/R cambiar el orden.
+
+
+CARÁTULAS Y ARTE
+----------------
+- Con internet, Pixmo Games baja las carátulas de GameTDB (se puede desactivar
+  en Ajustes). Mientras baja aparece "Descargando carátulas..." arriba.
+- Carátulas propias: SD:/wiiu/apps/pixmogames/covers/ con el ID de GameTDB
+  (ej. ARPE01.jpg) o el Title ID de 16 cifras (ej. 0005000010101C00.png).
+- Arte de fondo para la vista Cine: fondos/<TITLE ID>.jpg (1280x720). Si un
+  juego no tiene, se usa su pantalla de inicio de la consola.
+- Logo del título: titulos/<TITLE ID>.png (con transparencia). Si no hay, se
+  escribe el nombre.
+- El Title ID de cada juego aparece en X > Información del juego.
+- Las carátulas del carrusel cargan una sola vez: quedan guardadas en chico en
+  miniaturas.bin.
+
+
+MÚSICA
+------
+Sin canciones propias suena una música ambiental suave. Para poner las tuyas,
+conviértelas con tools/musica_consola.py (en el código fuente; necesita ffmpeg)
+y copia los .wav a SD:/wiiu/apps/pixmogames/musica/. Suenan en orden al azar y
+al empezar cada una aparece su nombre. Se apaga en Ajustes > Música ambiental.
+
+
+ÚLTIMO JUGADO Y ESTADÍSTICAS
+----------------------------
+"Última vez" usa la fecha más reciente entre la vez que lo iniciaste desde
+Pixmo Games y la última vez que el juego guardó partida (así también cuentan
+los juegos abiertos desde el menú Wii U). La pestaña Recientes ordena por esa
+fecha.
+
+
+OCULTAR JUEGOS
+--------------
+Botón del ojo tachado en la ficha del juego, o X > Ocultar este juego. Para
+verlos de nuevo: Ajustes > Juegos ocultos, o Ajustes > Mostrar juegos ocultos.
+
+
+ARCHIVOS EN LA SD (SD:/wiiu/apps/pixmogames/)
+---------------------------------------------
+  config.txt      ajustes, categorías, favoritos y estadísticas
+  cache.txt       nombres de los juegos (para abrir más rápido; se puede borrar)
+  covers/         carátulas        fondos/   arte de fondo
+  titulos/        logos de títulos logos/    logos de categorías
+  miniaturas.bin  carátulas en chico (si se borra, se vuelve a hacer)
+  musica/         canciones (.wav IMA ADPCM)
+  log.txt         registro de la última sesión (log_anterior.txt: la anterior)
+  volver.txt      aviso para el plugin: "volver aquí al cerrar el juego"
+  inicio_log.txt  lo que hizo el plugin
+Para volver a empezar de cero borra config.txt y cache.txt.
+
+
+SI ALGO FALLA
+-------------
+- Si la app no se cerró bien, la próxima vez abre en "modo seguro" (sin
+  descargas) y la siguiente vuelve a lo normal.
+- Juegos sin icono (solo una letra): la app lee los iconos con el permiso que
+  da Aroma. Sin él, los juegos igual aparecen y se pueden jugar.
+- Nombres raros o desactualizados: + > Volver a leer la biblioteca.
+- log.txt y log_anterior.txt cuentan qué estaba haciendo la app.
+
+
+LICENCIA
+--------
+Código bajo licencia MIT (LICENSE.txt). Componentes de terceros y sus licencias:
+THIRD_PARTY_NOTICES.txt. Pixmo Games no está afiliado a Nintendo.
